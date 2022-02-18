@@ -1,0 +1,130 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/palette";
+
+.navContainer {
+    padding: 2px 10px 5px;
+    margin-bottom: 10pt;
+    margin-right: 0 !important;
+}
+
+.logoContainer {
+    @extend %flexRow;
+    transform: translateY(3px);
+    color: palette.$deepBlue !important;
+    font-weight: bold;
+}
+
+
+.logoText {
+    text-decoration: none !important;
+    color: palette.$hardGray;
+    font-weight: 600;
+    font-size: 22pt;
+    @extend %grid5;
+}
+
+.navLeft {
+    margin-top: 10px;
+    display: flex;
+    flex: 1;
+}
+
+.linkText {
+    font-weight: 500;
+    margin-right: 10pt;
+}
+
+.dropDownItem {
+}
+
+.dropDownItem:active {
+    background-color: palette.$notDeepBlue !important;
+}
+
+.navRight {
+    display: flex;
+    flex: 4;
+    justify-content: flex-end;
+}
+
+.authContainer {
+    @extend %flexRow;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.signInButton {
+    @extend %grid5;
+    background-color: palette.$deepBlue;
+    padding: 5px 10px;
+    font-weight: 500;
+    color: palette.$white;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.signUpButton {
+    @extend %grid5;
+    padding: 3px 8px;
+    border: solid 2px palette.$deepBlue;
+    font-weight: 500;
+    color: palette.$deepBlue;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.searchContainer {
+    display: -webkit-flex;
+    flex-direction: row !important;
+    align-items: flex-start;
+}
+
+.searchForm {
+    flex: 1;
+}
+
+.searchIcon {
+    border-radius: 20px;
+    background-color: palette.$white;
+    border-right-color: transparent !important;
+}
+
+.searchInput {
+    display: flex !important;
+    align-self: center !important;
+    justify-self: center !important;
+    border-radius: 20px;
+    background-color: palette.$white;
+    border-left-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.searchInput:focus {
+    border-color: palette.$borderGrey !important;
+    border-left-color: transparent !important;
+}
+
+.searchButton {
+    @extend %grid5;
+    background-color: palette.$deepBlue;
+    padding: 5px 10px;
+    font-weight: 500;
+    color: palette.$white;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.loadingContainer {
+    @extend %grid5;
+    margin-left: 10px;
+    transform: translateY(-5px);
+    //padding: 0 10px;
+    //transform: ;
+}

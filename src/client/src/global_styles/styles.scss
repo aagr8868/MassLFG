@@ -1,0 +1,72 @@
+@use "./palette";
+@use "src/global_styles/basic_layouts";
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: palette.$soapstone !important;
+    height: 100%;
+    //@extend %flexGrid1;
+}
+
+#__next {
+    height: 100%;
+    @extend %flexGrid1;
+}
+
+.outer-container {
+    @extend %flexGrid1;
+}
+
+input {
+    border: none;
+    outline: none !important;
+}
+
+input:focus {
+    border: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.infoButton {
+    margin-top: 20px;
+    -webkit-border-radius: 10px;
+    background-color: palette.$deepBlue;
+    padding: 10px 14px;
+    color: palette.$white;
+    font-weight: bold;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.infoButton:hover {
+    color: palette.$white !important;
+}
+
+.infoButton:active {
+    color: palette.$white !important;
+}
+
+.outerContainer {
+    @extend %flexGrid5;
+    padding: 0 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: palette.$deepBlue;
+    color: palette.$white;
+    font-weight: bold;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: palette.$white !important;
+}

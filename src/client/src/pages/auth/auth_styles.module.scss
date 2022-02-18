@@ -1,0 +1,80 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/basic_visual";
+@use "src/global_styles/palette";
+
+.authBubbleContainer {
+    @extend %flexGrid5;
+    @extend %shadow-sm;
+    background-color: palette.$white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.titleContainer {
+    font-weight: bold;
+    color: palette.$deepBlue;
+}
+
+.incorrect {
+    color: red;
+}
+
+.formContainer {
+    @extend %flexGrid5;
+    padding: 30px;
+    width: 100%;
+}
+
+.authInput {
+    border: none;
+    border-bottom: solid 1px palette.$softGray;
+    min-width: 40%;
+    outline: none !important;
+    color: palette.$hardGray;
+    font-size: 15pt;
+}
+
+.authInput:focus {
+    border: none;
+    border-bottom: solid 1px palette.$softGray;
+}
+
+.usernameInput {
+    @extend .authInput;
+    margin-bottom: 30px;
+}
+
+
+.reqsContainer {
+    @extend %flexGrid1;
+    margin-top: 10px;
+}
+
+.req {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.validReq {
+    @extend .req;
+    color: palette.$secondary;
+}
+
+.invalidReq {
+    @extend .req;
+    color: palette.$danger;
+}
+
+.authFooterContainer {
+    margin-top: 20px;
+}
+
+.signUpButton {
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: palette.$deepBlue;
+    color: palette.$white;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+}

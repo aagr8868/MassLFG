@@ -1,0 +1,68 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/basic_visual";
+@use "src/global_styles/palette";
+
+.outerContainer {
+    @extend %flexGrid1;
+}
+
+.headerContainer {
+    @extend %grid5;
+    @extend %shadow-sm;
+    background-color: palette.$white;
+    border-radius: 20px;
+}
+
+.headerTitleContainer {
+    @extend %grid5;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: palette.$deepBlue;
+}
+
+.headerTitle {
+    font-size: 200pt;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 100px;
+    color: palette.$hardGray;
+}
+
+
+.sloganContainer {
+    margin-top: 30px;
+}
+
+.sloganText {
+    font-weight: 600;
+    color: palette.$hardGray;
+    text-align: center;
+}
+
+
+.useCaseContainer {
+    @extend %grid5;
+}
+
+.useCaseText {
+    text-align: center;
+}
+
+.useCasePart {
+    align-self: center;
+    padding-bottom: 2px;
+    margin: 8px 20px;
+    font-weight: bold;
+    display: inline-block;
+    color: palette.$mediumPink;
+    border-bottom: 1px solid palette.$citrusWisp;
+}
+
+.buttonContainer {
+    @extend %grid5;
+    margin-top: 20px;
+}
+

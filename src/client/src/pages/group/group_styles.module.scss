@@ -1,0 +1,48 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/basic_visual";
+@use "src/global_styles/palette";
+
+.groupContainer {
+    @extend %shadow-sm;
+    @extend %flexGrid1;
+    background-color: palette.$white;
+    border-radius: 10px;
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+}
+
+.messagesContainer {
+    @extend %flexGrid7;
+    padding: 20px 10px 0;
+    overflow-y: scroll;
+}
+
+.message {
+    padding-top: 10px;
+}
+
+.inputContainer {
+    @extend %flexRow;
+    background-color: palette.$soapstone;
+    padding: 10px;
+}
+
+.messageForm {
+    @extend %flexGrid1;
+}
+
+.messageInput {
+    @extend %flexGrid4;
+    border: solid 1px palette.$softGray;
+    border-radius: 5px;
+    padding: 6px;
+    margin-right: 10px;
+    color: palette.$hardGray;
+}
+
+.messageSendButton {
+    @extend %grid5;
+    font-size: 20px;
+    cursor: pointer;
+}

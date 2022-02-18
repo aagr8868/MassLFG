@@ -1,0 +1,16 @@
+9/16/21
+Introduced our project to Tzu-chi.
+Told Tzu-chi about our project architecture:
+	* Next.js (React) on frontend
+	* Express.js server
+	* Postgresql database
+
+9/23/21
+Did a brief check in with Tzu-chi.
+Given that we largely have already figured out our application architecture, this meeting was quite short.
+
+9/30/21
+Checked in with Tzu-chi about Milestone grading.
+Discussed the difference between npm and yarn.
+Briefly talked about how package managers solve NP hard problems!
+Showed Tzu-chi our basic directory structure.

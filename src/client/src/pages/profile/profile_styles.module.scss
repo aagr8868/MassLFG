@@ -1,0 +1,168 @@
+@use "src/global_styles/basic_layouts";
+@use "src/global_styles/basic_visual";
+@use "src/global_styles/palette";
+
+.outerContainer {
+
+}
+
+.bioInput{
+    margin-bottom: 200px;
+    margin-right: 100%;
+}
+
+.saveButton {
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: palette.$deepBlue;
+    color: palette.$white;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.headerContainer {
+    border-bottom: 1px solid palette.$softGray;
+}
+
+.usernameContainer {
+    font-weight: bold;
+    color: palette.$deepBlue;
+}
+
+.bioContainer {
+    margin-top: 20px;
+}
+
+.bioTitleContainer {
+    margin-bottom: 5px;
+}
+
+.bioTitle {
+    @extend %no-highlight;
+    margin-right: 10px;
+    font-weight: 600;
+    color: palette.$hardGray;
+    font-size: 14pt;
+}
+
+.bioEdit {
+    @extend %no-highlight;
+    margin-right: 5px;
+    font-weight: 600;
+    color: palette.$deepBlue;
+    cursor: pointer;
+}
+
+.bioInput {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: palette.$white;
+    border: 1px solid palette.$semiSoftGray !important;
+    outline: none !important;
+    margin-bottom: 10px;
+}
+
+
+.bioText {
+    color: palette.$hardGray;
+}
+
+.findGroupContainer {
+    @extend %flexGrid5;
+    margin: 30px 0;
+}
+
+.yourGamesContainer {
+    @extend %shadow-sm;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px
+}
+
+.gamesHeader {
+    @extend %flexRow;
+    padding-bottom: 4px;
+    border-bottom: 1px solid palette.$softGray;
+}
+
+.gamesHeaderLeft {
+    @extend %flexGrid4;
+}
+
+.yourGamesTitle {
+    font-weight: bold;
+    color: palette.$hardGray;
+}
+
+.gamesHeaderRight {
+    @extend %flexGrid6;
+}
+
+.importSteamButton {
+    padding: 5px 10px;
+    background-color: palette.$deepBlue;
+    border-radius: 6px;
+    font-weight: bold;
+    color: palette.$white;
+    cursor: pointer;
+}
+
+.gamesContainer {
+    @extend %flexGrid5;
+    min-height: 200px;
+    color: palette.$semiSoftGray;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.gamesRowContainer {
+    @extend %flexRow;
+    flex-wrap: wrap;
+    min-height: 200px;
+    color: palette.$semiSoftGray;
+    font-weight: bold;
+    font-size: 15pt;
+    margin-top: 20px;
+}
+
+.gameContainer {
+    @extend %shadow-sm;
+    @extend %grid2;
+    background-color: palette.$soapstone;
+    border-radius: 20px;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.gameContainerHeader {
+    color: palette.$mediumPink;
+    text-align: center;
+}
+
+.gameBody {
+    @extend %flexGrid8;
+}
+
+.visitGameButton {
+    @extend %grid2;
+    font-size: 11pt;
+    padding: 4px 10px;
+    margin: 10px 0;
+    //background-color: palette.$deepBlue;
+    border-radius: 15px;
+    font-weight: 500;
+    color: palette.$deepBlue;
+    cursor: pointer;
+}
+
+.visitGameButton:hover {
+    color: palette.$deepBlue;
+}
+
+.visitGameButton:active {
+    color: palette.$deepBlue;
+}
+
+

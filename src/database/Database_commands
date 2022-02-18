@@ -1,0 +1,23 @@
+#Enter postgres
+docker-compose exec db psql -U postgres
+
+#Table Creation
+>> CREATE TABLE IF NOT EXISTS user_info(
+  steamid VARCHAR(200),
+  username VARCHAR(200) PRIMARY KEY,
+  bio VARCHAR(200),
+  password VARCHAR(200)
+);
+
+>> CREATE TABLE IF NOT EXISTS games_info(
+  steamid VARCHAR(200) PRIMARY KEY,
+  gameid  VARCHAR(200)
+);
+
+#Generics
+INSERT INTO user_info(steamid, username, bio, password) VALUES('76561198060225512', 'RayJZ', 'I love pie.', 'Hats89$Hats');
+SELECT *from user_info where username = 'RayJZ' AND password = 'Hats89$Hats'
+
+#JS
+var insert = "INSERT INTO user_info(steamid, username, bio, password) VALUES('" + steamid_variable + "', '" + username_variable + "', '" + bio_variable + "', '" + password_variable + "');"
+var select = "SELECT * FROM user_info WHERE username = '" + username_variable + "' AND password = '" + password_variable + "';"
